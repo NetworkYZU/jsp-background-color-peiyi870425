@@ -13,9 +13,14 @@
     </head>
     <%
         String color="blue";
+        String [] colors =new String[]{
+            "LightPink" ,"LightCoral","Tomato","PaleVioletRed","Coral"
+        };
         String parameter=request.getParameter("color");
         if(parameter!=null){
             color=parameter;
+        }else{
+        color = colors[(int)(Math.random()*1000%colors.length)];
         }
     %>
    
