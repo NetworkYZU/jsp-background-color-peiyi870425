@@ -12,14 +12,14 @@
         <title>JSP Page</title>
     </head>
     <%
-        String color="blue";//從 request.getParameter("...") 取得 color 參數
-        // 額外：若 user 沒輸入參數，就隨機抓顏色
+        String color="blue";
+        String parameter=request.getParameter("color");
+        if(parameter!=null){
+            color=parameter;
+        }
     %>
-    <!--
-    利用 <%=%>
-    這個寫法，產生 bgcolor 屬性的內容
-    -->
-    <body>
+   
+    <body bgcolor="<%=color%>">
         <h1>Hello World!</h1>
     </body>
 </html>
