@@ -19,7 +19,8 @@
             "LightPink" ,"LightCoral","Tomato","PaleVioletRed","Coral"
         };
         String[] icons=new String[]{
-            "fa-arrow-alt-circle-left","fa-arrow-alt-circle-right","fa-arrow-alt-circle-up","fa-arrow-alt-circle-down"
+            "fa-arrow-alt-circle-left","fa-arrow-alt-circle-right"
+            ,"fa-arrow-alt-circle-up","fa-arrow-alt-circle-down"
         };
         String icon=icons[(int)(Math.random()*1000%icons.length)];
         String parameter=request.getParameter("color");
